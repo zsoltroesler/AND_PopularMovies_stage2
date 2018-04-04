@@ -15,4 +15,3 @@ the rest of the information needed to display their favorites collection while o
  
  Tags: JSON parsing, HTTP networking, AsyncTaskLoader, RecyclerView, ViewHolder, CardView, Picasso, ButterKnife, ContentProvider, SQLite database
  
- ![popularmovies2gif](https://user-images.githubusercontent.com/23049871/37681070-f159c10c-2c85-11e8-9d86-e664870f041c.gif)
