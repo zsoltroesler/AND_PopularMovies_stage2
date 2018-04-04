@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_label_options">
+        <item>@string/pref_label_popular</item>
+        <item>@string/pref_label_top_rated</item>
+        <item>@string/pref_label_now_playing</item>
+        <item>@string/pref_label_favourites</item>
+    </string-array>
+
+    <string-array name="pref_value_options">
+        <item>@string/pref_value_popular</item>
+        <item>@string/pref_value_top_rated</item>
+        <item>@string/pref_value_now_playing</item>
+        <item>@string/pref_value_favourites</item>
+    </string-array>
+
+</resources>

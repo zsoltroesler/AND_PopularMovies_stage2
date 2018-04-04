@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_movie_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_video_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundTransparent"
+        android:textColor="@android:color/white"
+        android:paddingLeft="@dimen/padding_left_video_name"
+        android:paddingStart="@dimen/padding_left_video_name"
+        tools:text="Trailer"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_video"
+        app:layout_constraintStart_toStartOf="@+id/iv_video"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

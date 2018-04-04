@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context="com.example.android.popularmoviesstage2.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/movie_backdrop" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/padding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold"
+                tools:text="Movie title" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_poster_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/movie_poster" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/GeneralText"
+                        android:text="@string/release_date" />
+
+                    <TextView
+                        android:id="@+id/tv_release_date"
+                        style="@style/GeneralText"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        tools:text="2017-12-12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin">
+
+                    <TextView
+                        style="@style/GeneralText"
+                        android:text="@string/rating" />
+
+                    <TextView
+                        android:id="@+id/tv_rate"
+                        style="@style/GeneralText"
+                        android:layout_marginLeft="@dimen/margin_rating_circle"
+                        android:layout_marginStart="@dimen/margin_rating_circle"
+                        android:background="@drawable/rating_circle"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        tools:text="6.4" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_favourite"
+                        style="@style/GeneralText"
+                        android:text="@string/favorites_add" />
+
+                    <ImageButton
+                        android:id="@+id/ib_favourite"
+                        android:layout_width="@dimen/star_size"
+                        android:layout_height="@dimen/star_size"
+                        android:background="@drawable/ic_star_border"
+                        android:onClick="onClickFavourite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/rounded_corner"
+            android:padding="@dimen/padding_overview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_overview"
+            tools:text="Overview" />
+
+        <TextView
+            style="@style/GeneralText"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
+            android:text="@string/videos" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_video_list"
+            style="@style/GeneralRecyclerView"/>
+
+        <TextView
+            android:id="@+id/tv_empty_video"
+            style="@style/EmptyTextPlaceholder"
+            android:text="@string/empty_video" />
+
+        <TextView
+            style="@style/GeneralText"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
+            android:text="@string/reviews" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_review_list"
+            style="@style/GeneralRecyclerView" />
+
+        <TextView
+            android:id="@+id/tv_empty_review"
+            style="@style/EmptyTextPlaceholder"
+            android:text="@string/empty_review" />
+
+    </LinearLayout>
+</ScrollView>

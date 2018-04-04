@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_rating_circle">4dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_overview">4dp</dimen>
+    <dimen name="padding_recycle_view">4dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_overview">16sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="card_view_margin">2dp</dimen>
+    <dimen name="card_view_elevation">16dp</dimen>
+    <dimen name="card_view_radius">4dp</dimen>
+    <dimen name="star_size">50dp</dimen>
+    <dimen name="padding_left_video_name">2dp</dimen>
+
+</resources>
