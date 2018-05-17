@@ -118,9 +118,9 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         if (savedInstanceState == null) {
-            initLoader();
+            selectLoader();
         } else {
-            if (initLoader()) {
+            if (selectLoader()) {
                 currentLoaderId = savedInstanceState.getInt(CURRENT_LOADER_ID);
                 getSupportLoaderManager().restartLoader(currentLoaderId, null, this);
             } else {
@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity implements
                 return true;
 
             case R.id.action_refresh:
-                initLoader();
+                selectLoader();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     // Helper method to initialize the corresponding loader
-    private boolean initLoader(){
+    private boolean selectLoader(){
         // Get a reference to the ConnectivityManager to check state of network connectivity
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
