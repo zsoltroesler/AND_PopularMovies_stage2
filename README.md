@@ -11,8 +11,10 @@ Project overview: In this second and final stage, the app has functionality more
 - creates a database and content provider to store the names and ids of the user's favorite movies (and optionally, 
 the rest of the information needed to display their favorites collection while offline).
 - modified the existing sorting criteria for the main view to include an additional pivot to show their favorites collection.
-+ additional functions like searching in themoviedb.org database, sharing the film details and sorting by "now playing" movies
++ additional functions like searching in themoviedb.org database, refresh data, sharing the film details and sorting by "now playing" movies
  
  Tags: JSON parsing, HTTP networking, AsyncTaskLoader, RecyclerView, ViewHolder, CardView, Picasso, ButterKnife, ContentProvider, SQLite database
  
- ![popularmovies2gif](https://user-images.githubusercontent.com/23049871/37681070-f159c10c-2c85-11e8-9d86-e664870f041c.gif)
+![popularmovies2](https://user-images.githubusercontent.com/23049871/38334763-8fa6736e-385c-11e8-876e-49ca274717de.gif)
+
+Note: API key to fetch movie data from themoviedb.org website was removed from gradle.properties file due to sensitive data. In order to use this open repo you should request an API key from themoviedb.org
